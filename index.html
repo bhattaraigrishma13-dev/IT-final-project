@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home | No Diet With Grishma</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Navigation Bar Starts -->
+<nav>
+  <a href="index.html" class="brand">🍔 No Diet With Grishma</a>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="menu.html">Menu</a></li>
+    <li><a href="gallery.html">Gallery</a></li>
+    <li><a href="specials.html">Specials</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+<!-- Navigation Bar Ends -->
+
+<!-- Page Arrows Starts -->
+<div class="page-arrows">
+  <button class="page-arrow" onclick="goToPage(-1)">&#8249;</button>
+  <button class="page-arrow" onclick="goToPage(1)">&#8250;</button>
+</div>
+<!-- Page Arrows Ends -->
+
+<!-- Image Slider Starts -->
+<div class="slider">
+  <div class="slides" id="slides">
+    <img src="photos/momo.jpg" alt="Momo">
+    <img src="photos/chowmein.jpg" alt="Chowmein">
+    <img src="photos/sekuwa.jpg" alt="Sekuwa">
+    <img src="photos/thukpa.jpg" alt="Thukpa">
+    <img src="photos/thakali.jpg" alt="Thakali">
+  </div>
+  <div class="slide-caption">Welcome to No Diet With Grishma 🍔</div>
+  <button class="prev-btn" onclick="changeSlide(-1)">&#8249;</button>
+  <button class="next-btn" onclick="changeSlide(1)">&#8250;</button>
+</div>
+<!-- Image Slider Ends -->
+
+<!-- Popular Dishes Starts -->
+<div class="section">
+  <h1>Welcome to No Diet With Grishma</h1>
+  <p style="font-style: italic; margin-bottom: 6px;">Because calories don't count here </p>
+  <p style="margin-bottom: 20px;">Discover the best and most delicious food in Nepal!</p>
+  <div class="line"></div>
+
+  <h2>Popular Dishes</h2>
+  <div class="cards">
+    <div class="card">
+      <img src="photos/momo.jpg" alt="Momo">
+      <h3>Buff Momo</h3>
+      <p class="price">Rs. 180</p>
+      <p>Soft, juicy and full of flavor — a Nepali classic!</p>
+    </div>
+    <div class="card">
+      <img src="photos/chowmein.jpg" alt="Chowmein">
+      <h3>Veg Chowmein</h3>
+      <p class="price">Rs. 120</p>
+      <p>Stir-fried noodles with fresh vegetables and spices.</p>
+    </div>
+    <div class="card">
+      <img src="photos/sekuwa.jpg" alt="Sekuwa">
+      <h3>Chicken Sekuwa</h3>
+      <p class="price">Rs. 250</p>
+      <p>Perfectly grilled chicken on skewers with spice rub.</p>
+    </div>
+  </div>
+
+  <p style="margin-top: 24px;">
+    Learn more about Nepali food:
+    <a href="https://en.wikipedia.org/wiki/Nepalese_cuisine" target="_blank" style="color: #ff6b35;">Click Here</a>
+  </p>
+</div>
+<!-- Popular Dishes Ends -->
+
+<!-- Secondary Nav Starts -->
+<div class="bottom-nav">
+  <a href="index.html">Home</a> |
+  <a href="menu.html">Menu</a> |
+  <a href="gallery.html">Gallery</a> |
+  <a href="specials.html">Specials</a> |
+  <a href="about.html">About</a> |
+  <a href="contact.html">Contact</a> |
+  <a href="sitemap.html">Sitemap</a>
+</div>
+<!-- Secondary Nav Ends -->
+
+<!-- Footer Starts -->
+<footer>
+  <p><strong>No Diet With Grishma</strong> &copy; 2026</p>
+  <p>Location: Kathmandu, Nepal &nbsp;|&nbsp; Email: <a href="mailto:foodhub@gmail.com">foodhub@gmail.com</a></p>
+</footer>
+<!-- Footer Ends -->
+
+<script src="script.js"></script>
+</body>
+</html>

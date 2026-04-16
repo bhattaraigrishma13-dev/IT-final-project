@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | No Diet With Grishma</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Navigation Bar Starts -->
+<nav>
+  <a href="index.html" class="brand">🍔 No Diet With Grishma</a>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="menu.html">Menu</a></li>
+    <li><a href="gallery.html">Gallery</a></li>
+    <li><a href="specials.html">Specials</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+<!-- Navigation Bar Ends -->
+
+<!-- Page Arrows Starts -->
+<div class="page-arrows">
+  <button class="page-arrow" onclick="goToPage(-1)">&#8249;</button>
+  <button class="page-arrow" onclick="goToPage(1)">&#8250;</button>
+</div>
+<!-- Page Arrows Ends -->
+
+<!-- Contact Section Starts -->
+<div class="section">
+  <h1>Contact Us</h1>
+  <p style="margin-bottom: 16px;">Have a question or suggestion? We would love to hear from you!</p>
+  <div class="line"></div>
+
+  <div class="contact-box">
+    <form onsubmit="return validateForm()">
+      <div class="form-group">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" placeholder="Your Name">
+      </div>
+      <div class="form-group">
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" placeholder="Your Email">
+      </div>
+      <div class="form-group">
+        <label for="message">Your Message:</label>
+        <textarea id="message" rows="5" placeholder="Write your message here..."></textarea>
+      </div>
+      <div class="form-group">
+        <button type="submit">Send Message</button>
+      </div>
+    </form>
+  </div>
+</div>
+<!-- Contact Section Ends -->
+
+<!-- Secondary Nav Starts -->
+<div class="bottom-nav">
+  <a href="index.html">Home</a> |
+  <a href="menu.html">Menu</a> |
+  <a href="gallery.html">Gallery</a> |
+  <a href="specials.html">Specials</a> |
+  <a href="about.html">About</a> |
+  <a href="contact.html">Contact</a> |
+  <a href="sitemap.html">Sitemap</a>
+</div>
+<!-- Secondary Nav Ends -->
+
+<!-- Footer Starts -->
+<footer>
+  <p><strong>No Diet With Grishma</strong> &copy; 2026</p>
+  <p>Location: Kathmandu, Nepal &nbsp;|&nbsp; Email: <a href="mailto:foodhub@gmail.com">foodhub@gmail.com</a></p>
+</footer>
+<!-- Footer Ends -->
+
+<script src="script.js"></script>
+</body>
+</html>
