@@ -63,3 +63,29 @@ document.addEventListener("touchend", function(e) {
   if (diff > 50) goToPage(1);
   if (diff < -50) goToPage(-1);
 });
+
+/* ===== Scroll Reveal ===== */
+function initScrollReveal() {
+  var elements = document.querySelectorAll(".scroll-reveal");
+  if (!elements.length) return;
+
+  var observer = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry, i) {
+      if (entry.isIntersecting) {
+        var el = entry.target;
+        var delay = el.getAttribute("data-delay") || 0;
+        setTimeout(function() {
+          el.classList.add("visible");
+        }, delay);
+        observer.unobserve(el);
+      }
+    });
+  }, { threshold: 0.15 });
+
+  elements.forEach(function(el, i) {
+    el.setAttribute("data-delay", i * 120);
+    observer.observe(el);
+  });
+}
+
+document.addEventListener("DOMContentLoaded", initScrollReveal);
